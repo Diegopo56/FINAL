@@ -1,0 +1,176 @@
+while True:
+    print("Bienvenido a TicketMaster")
+    nombre = input("¿Cuál es tu nombre? ")
+    print("Muy bien " + nombre + ", ¿A qué concierto te gustaría asistir?")
+    print(" * Selecciona * ")
+    print("Conejo Malo. Presiona 1")
+    print("Arcangel pa. Presiona 2")
+    print("Nu. Presiona 3 ")
+    print("El incendio. Presiona 4")
+    print("**")
+    
+    opcion = int(input("Escribe el número del concierto al que deseas asistir: "))
+    
+    # Selección opción 1 Conejo malo
+    if opcion == 1:
+        print("Perfecto, el boleto tiene un precio de $2500 MXN.")
+        opcion_uno = input(nombre + ", ¿Te gustaría proceder con el pago SI o NO? ")
+        if opcion_uno == "SI":
+            print("Muy bien, ¿cuál sería tu método de pago?")
+            print("SELECCIONA")
+            print("Tarjeta BBVA. Presiona 7")
+            print("Otra tarjeta (con 10% de intereses). Presiona 8")
+            print("Transferencia. Presiona 9")
+            opcion_pago = int(input("Selecciona la opción de tu pago: "))
+            
+            if opcion_pago == 7:
+                print("Perfecto, " + nombre + ". Inserte su tarjeta.")
+                PIN = input("Por favor inserte su PIN: ")
+                if PIN == "2588":
+                    print(nombre + ", ¡¡¡¡¡¡FELICIDADES, SU TARJETA HA SIDO APROBADA!!!!!!, ¡¡¡Su boleto está disponible para usarlo!!!")
+                else:
+                    print("PIN incorrecto Transacción no autorizada ☹️.")
+            
+            elif opcion_pago == 8:
+                print(f"Serían $2500 pesos más el 10%, en total serían $2750 pesos.")
+                PIN = input("Por favor inserte su tarjeta y su PIN: ")
+                if PIN == "2588":
+                    print(nombre + ", ¡¡¡FELICIDADES, SU TARJETA HA SIDO APROBADA!!! ¡¡¡Su boleto está disponible para usarlo!!!")
+                else:
+                    print("PIN incorrecto. Transacción no autorizada.")
+            
+            elif opcion_pago == 9:
+                saldo = 1000000
+                print(f"Tu saldo en tu cuenta es de {saldo} pesos.")
+                Transferencia = float(input("¿Cuál será la cantidad que te gustaría transferir? "))
+                if Transferencia <= saldo:
+                    saldo -= Transferencia
+                    print(f"Transferencia registrada exitosamente. Tu nuevo saldo es: {saldo} pesos.")
+                    print("¡¡¡Su boleto está disponible para usarlo!!!")
+                else:
+                    print("Saldo insuficiente para realizar la transferencia.☹️")
+        else:
+            print("Perfecto, " + nombre + ". Puedes volver a iniciar sesión para seleccionar otro concierto.")
+
+    # Selección opción 2 Arcangel Pa
+    elif opcion == 2:
+        print("Perfecto, el boleto tiene un precio de $1960 MXN.")
+        opcion_dos = input(nombre + "¿Te gustaría proceder con el pago SI o NO? ")
+        if opcion_dos == "SI":
+            print("Muy bien, ¿cuál sería tu método de pago?")
+            print("SELECCIONA")
+            print("Tarjeta BBVA. Presiona 7")
+            print("Otra tarjeta (con 10% de intereses). Presiona 8")
+            print("Transferencia. Presiona 9")
+            opcion_pago = int(input("Selecciona la opción de tu pago: "))
+            
+            if opcion_pago == 7:
+                print("Perfecto, " + nombre + ". Inserte su tarjeta.")
+                PIN = input("Por favor inserte su PIN: ")
+                if PIN == "2588":
+                    print(nombre + ", ¡¡¡FELICIDADES, SU TARJETA HA SIDO APROBADA!!! ¡¡¡Su boleto está disponible para usarlo¡¡¡")
+                else:
+                    print("PIN incorrecto. Transacción no autorizada.")
+            
+            elif opcion_pago == 8:
+                print(f"Serían $1960 pesos más el 10%, en total $2156 pesos.")
+                PIN = input("Por favor inserte su tarjeta y su PIN: ")
+                if PIN == "2588":
+                    print(nombre + ", ¡¡¡FELICIDADES, SU TARJETA HA SIDO APROBADA!!! ¡¡¡Su boleto está disponible para usarlo¡¡¡ ")
+                else:
+                    print("PIN incorrecto. Transacción no autorizada.")
+            
+            elif opcion_pago == 9:
+                saldo = 1000000
+                print(f"Tu saldo en tu cuenta es de {saldo} pesos.")
+                Transferencia = float(input("¿Cuál será la cantidad que te gustaría transferir? "))
+                if Transferencia <= saldo:
+                    saldo -= Transferencia
+                    print(f"Transferencia registrada exitosamente. Tu nuevo saldo es: {saldo} pesos.")
+                    print("¡¡¡Su boleto está disponible para usarlo!!!")
+                else:
+                    print("Saldo insuficiente para realizar la transferencia.☹️")
+        else:
+            print("Perfecto, " + nombre + ". Puedes volver a iniciar sesión para seleccionar otro.")
+
+    # Selección opción 3: Nu
+    elif opcion == 3:
+        print("Perfecto, el boleto tiene un precio de $1740 MXN.")
+        opcion_tres = input(nombre + ", ¿Te gustaría proceder con el pago SI o NO?")
+        if opcion_tres == "SI":
+            print("Muy bien, ¿Cuál sería tu método de pago?")
+            print("SELECCIONA")
+            print("Tarjeta BBVA. Presiona 7")
+            print("Otra tarjeta (con 10% de intereses). Presiona 8")
+            print("Transferencia. Presiona 9")
+            opcion_pago = int(input("Selecciona la opción de tu pago: "))
+            
+            if opcion_pago == 7:
+                print("Perfecto, " + nombre + ". Inserte su tarjeta.")
+                PIN = input("Por favor inserte su PIN: ")
+                if PIN == "2588":
+                    print(nombre + ", ¡¡¡FELICIDADES, SU TARJETA HA SIDO APROBADA!!! ¡¡¡Su boleto está disponible para usarlo!!!")
+                else:
+                    print("PIN incorrecto. Transacción no autorizada.")
+            
+            elif opcion_pago == 8:
+                print(f"Serían $1740 pesos más el 10%, en total $1914 pesos.")
+                PIN = input("Por favor inserte su tarjeta y su PIN: ")
+                if PIN == "2588":
+                    print(nombre + ", ¡¡¡FELICIDADES, SU TARJETA HA SIDO APROBADA!!! ¡¡¡Su boleto está disponible para usarlo!!!")
+                else:
+                    print("PIN incorrecto. Transacción no autorizada.☹️")
+            
+            elif opcion_pago == 9:
+                saldo = 1000000
+                print(f"Tu saldo en tu cuenta es de {saldo} pesos.")
+                Transferencia = float(input("¿Cuál será la cantidad que te gustaría transferir? "))
+                if Transferencia <= saldo:
+                    saldo -= Transferencia
+                    print(f"Transferencia registrada exitosamente. Tu nuevo saldo es: {saldo} pesos.")
+                    print("¡¡¡Su boleto está disponible para usarlo!!!")
+                else:
+                    print("Saldo insuficiente para realizar la transferencia.☹️")
+        else:
+            print("Perfecto, " + nombre + ". Puedes volver a iniciar sesión para seleccionar otro.")
+
+    # Selección opción 4 El incendio
+    elif opcion == 4:
+        print("Perfecto, el boleto tiene un precio de $2000 MXN.")
+        opcion_cuatro = input(nombre + ", ¿Te gustaría proceder con el pago SI o NO?")
+        if opcion_cuatro == "SI":
+            print("Muy bien, ¿Cuál sería tu método de pago?")
+            print("SELECCIONA")
+            print("Tarjeta BBVA. Presiona 7")
+            print("Otra tarjeta (con 10% de intereses). Presiona 8")
+            print("Transferencia. Presiona 9")
+            opcion_pago = int(input("Selecciona la opción de tu pago: "))
+            
+            if opcion_pago == 7:
+                print("Perfecto, " + nombre + ". Inserte su tarjeta.")
+                PIN = input("Por favor inserte su PIN: ")
+                if PIN == "2588":
+                    print(nombre + ", ¡¡¡FELICIDADES, SU TARJETA HA SIDO APROBADA!!! ¡¡¡Su boleto está disponible para usarlo!!!")
+                else:
+                    print("PIN incorrecto. Transacción no autorizada ☹️.")
+            
+            elif opcion_pago == 8:
+                print(f"Serían $2000 más el 10%, en total $2,200 pesos.")
+                PIN = input("Por favor inserte su tarjeta y su PIN: ")
+                if PIN == "2588":
+                    print(nombre + ", ¡¡¡FELICIDADES, SU TARJETA HA SIDO APROBADA!!! ¡¡¡Su boleto está disponible para usarlo!!!")
+                else:
+                    print("PIN incorrecto. Transacción no autorizada.")
+            
+            elif opcion_pago == 9:
+                saldo = 1000000
+                print(f"Tu saldo en tu cuenta es de {saldo} pesos.")
+                Transferencia = float(input("¿Cuál será la cantidad que te gustaría transferir? "))
+                if Transferencia <= saldo:
+                    saldo -= Transferencia
+                    print(f"Transferencia registrada exitosamente. Tu nuevo saldo es: {saldo} pesos.")
+                    print("¡¡¡Su boleto está disponible para usarlo!!!")
+                else:
+                    print("Saldo insuficiente para realizar la transferencia.☹️")
+        else:
+            print("Perfecto, " + nombre + ". Puedes volver a iniciar sesión para seleccionar otro.")
